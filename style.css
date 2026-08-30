@@ -213,11 +213,9 @@ hr {
    ================================= */
 
 table {
-    width: 100%;
-
+    width: 90%;
+    margin: 20px auto;
     border-collapse: collapse;
-
-    margin-top: 20px;
 }
 
 th,
