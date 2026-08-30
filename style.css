@@ -600,3 +600,86 @@ nav a:hover {
 
 }
 
+/* =========================
+   MOBILE-FRIENDLY SKILLS TABLE
+========================= */
+
+.content-section {
+    width: 100%;
+    text-align: center;
+}
+
+.content-section table {
+    width: 95%;
+    max-width: 900px;
+    margin: 25px auto;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.content-section th,
+.content-section td {
+    border: 1px solid #ccc;
+    padding: 12px 8px;
+    text-align: center;
+    vertical-align: middle;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+/* Column sizes */
+.content-section th:nth-child(1),
+.content-section td:nth-child(1) {
+    width: 24%;
+}
+
+.content-section th:nth-child(2),
+.content-section td:nth-child(2) {
+    width: 25%;
+}
+
+.content-section th:nth-child(3),
+.content-section td:nth-child(3) {
+    width: 51%;
+}
+
+/* Header */
+.content-section th {
+    background: #1f2937;
+    color: white;
+    font-weight: bold;
+}
+
+/* Alternate rows */
+.content-section tr:nth-child(even) {
+    background: #f3f4f6;
+}
+
+/* Phone */
+@media (max-width: 600px) {
+
+    .content-section table {
+        width: 96%;
+        font-size: 13px;
+    }
+
+    .content-section th,
+    .content-section td {
+        padding: 10px 5px;
+    }
+
+    .content-section th:nth-child(1),
+    .content-section td:nth-child(1) {
+        width: 23%;
+    }
+
+    .content-section th:nth-child(2),
+    .content-section td:nth-child(2) {
+        width: 24%;
+    }
+
+    .content-section th:nth-child(3),
+    .content-section td:nth-child(3) {
+        width: 53%;
+    }
+}
