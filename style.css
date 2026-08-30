@@ -208,35 +208,31 @@ hr {
 }
 
 
-/* =================================
-   TABLE
-   ================================= */
+/* MY SKILLS TABLE */
 
-table {
+.content-section table {
     width: 90%;
-    margin: 20px auto;
+    max-width: 900px;
+    margin: 30px auto;
     border-collapse: collapse;
 }
 
-th,
-td {
+.content-section th,
+.content-section td {
     border: 1px solid #ccc;
-
-    padding: 13px;
-
-    text-align: left;
+    padding: 15px;
+    text-align: center;
+    vertical-align: middle;
 }
 
-th {
-    background-color: #1f2937;
-
+.content-section th {
+    background: #1f2937;
     color: white;
 }
 
-tr:nth-child(even) {
-    background-color: #f3f4f6;
+.content-section tr:nth-child(even) {
+    background: #f3f4f6;
 }
-
 
 /* =================================
    PROJECTS
@@ -602,4 +598,26 @@ nav a:hover {
         transition: none !important;
     }
 
+}
+
+/* FINAL TABLE FIX */
+
+.content-section {
+    width: 100%;
+    text-align: center;
+}
+
+.content-section table {
+    width: 90% !important;
+    max-width: 900px !important;
+    margin: 30px auto !important;
+    border-collapse: collapse;
+}
+
+.content-section th,
+.content-section td {
+    text-align: center !important;
+    vertical-align: middle !important;
+    padding: 15px;
+    border: 1px solid #ccc;
 }
