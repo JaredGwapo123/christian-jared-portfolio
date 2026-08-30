@@ -600,24 +600,3 @@ nav a:hover {
 
 }
 
-/* FINAL TABLE FIX */
-
-.content-section {
-    width: 100%;
-    text-align: center;
-}
-
-.content-section table {
-    width: 90% !important;
-    max-width: 900px !important;
-    margin: 30px auto !important;
-    border-collapse: collapse;
-}
-
-.content-section th,
-.content-section td {
-    text-align: center !important;
-    vertical-align: middle !important;
-    padding: 15px;
-    border: 1px solid #ccc;
-}
