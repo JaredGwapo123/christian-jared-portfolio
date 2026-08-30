@@ -209,20 +209,22 @@ hr {
 
 
 /* TABLE */
-
+/* TABLE */
 table {
-    width: 90%;
+    width: calc(100% - 40px) !important;
     max-width: 900px;
     margin: 25px auto !important;
     border-collapse: collapse;
+    box-sizing: border-box;
 }
 
 th,
 td {
     border: 1px solid #ccc;
     padding: 15px;
-    text-align: left !important;
+    text-align: left;
     vertical-align: middle;
+    box-sizing: border-box;
 }
 
 th {
