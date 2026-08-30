@@ -486,40 +486,6 @@ footer p {
 }
 
 
-/* MOBILE */
-
-@media (max-width: 700px) {
-
-    header h1 {
-        font-size: 28px;
-    }
-
-    .hero {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .hero img {
-        width: 180px;
-        height: 180px;
-    }
-
-    .project-grid {
-        grid-template-columns: 1fr;
-    }
-
-    table {
-        font-size: 14px;
-    }
-
-    nav {
-        flex-direction: column;
-    }
-
-    nav a {
-        width: 100%;
-    }
-
    /* =====================================
    MINIMALIST MOVING ANIMATIONS
 ===================================== */
