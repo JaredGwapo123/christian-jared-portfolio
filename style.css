@@ -209,6 +209,7 @@ hr {
 
 
 /* TABLE */
+
 table {
     width: calc(100% - 40px) !important;
     max-width: 900px;
