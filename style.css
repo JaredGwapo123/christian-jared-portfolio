@@ -240,7 +240,7 @@ tr:nth-child(even) {
    ================================= */
 
 .tip-box {
-    padding: 10px 25px 25px 25px;
+    padding: 15px 25px 25px 25px;
 }
    
 .tip-box h3 {
@@ -250,10 +250,12 @@ tr:nth-child(even) {
 }
 
 .tip-box p {
+    text-align: center;
+    font-size: 17px;
     margin-top: 0px;
     margin-bottom: 0px;
-}
 
+}
 /* =================================
    PROJECTS
    ================================= */
