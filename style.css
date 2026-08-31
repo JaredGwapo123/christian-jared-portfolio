@@ -1329,111 +1329,112 @@ footer p {
 }
 
 
-   /* =====================================
-   MINIMALIST MOVING ANIMATIONS
-===================================== */
+/* =================================
+   NOTICEABLE MODERN BACKGROUND
+   ================================= */
 
-/* Smooth page entrance */
-main {
-    animation: pageEnter 0.8s ease-out;
+body {
+    position: relative;
+    overflow-x: hidden;
+
+    background: linear-gradient(
+        120deg,
+        #dbeafe,
+        #e9d5ff,
+        #bfdbfe,
+        #ddd6fe,
+        #bae6fd
+    );
+
+    background-size: 400% 400%;
+    animation: backgroundMove 10s ease-in-out infinite;
 }
 
-@keyframes pageEnter {
-    from {
-        opacity: 0;
-        transform: translateY(15px);
-    }
+/* Large moving glow */
+body::before {
+    content: "";
+    position: fixed;
 
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    width: 450px;
+    height: 450px;
+
+    top: -150px;
+    left: -150px;
+
+    border-radius: 50%;
+
+    background: rgba(59, 130, 246, 0.35);
+
+    filter: blur(60px);
+
+    z-index: -1;
+
+    animation: blueGlow 8s ease-in-out infinite alternate;
 }
 
+/* Second moving glow */
+body::after {
+    content: "";
+    position: fixed;
 
-/* Profile picture floating animation */
-.hero-image img {
-    animation: profileFloat 4s ease-in-out infinite;
+    width: 400px;
+    height: 400px;
+
+    right: -120px;
+    bottom: -120px;
+
+    border-radius: 50%;
+
+    background: rgba(139, 92, 246, 0.30);
+
+    filter: blur(60px);
+
+    z-index: -1;
+
+    animation: purpleGlow 10s ease-in-out infinite alternate;
 }
 
-@keyframes profileFloat {
-    0%,
-    100% {
-        transform: translateY(0);
+/* Gradient movement */
+@keyframes backgroundMove {
+    0% {
+        background-position: 0% 50%;
     }
 
     50% {
-        transform: translateY(-8px);
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
     }
 }
 
-
-/* Buttons */
-.button {
-    transition: transform 0.25s ease,
-                box-shadow 0.25s ease;
-}
-
-.button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-}
-
-
-/* Navigation */
-nav a {
-    transition: transform 0.25s ease,
-                background-color 0.25s ease;
-}
-
-nav a:hover {
-    transform: translateY(-2px);
-}
-
-
-/* Cards */
-.card {
-    transition: transform 0.3s ease,
-                box-shadow 0.3s ease;
-}
-
-.card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
-}
-
-
-/* Project cards */
-.project-card {
-    transition: transform 0.3s ease,
-                box-shadow 0.3s ease;
-}
-
-.project-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
-}
-
-
-/* Project images gently zoom on hover */
-.project-card img {
-    transition: transform 0.4s ease;
-}
-
-.project-card:hover img {
-    transform: scale(1.03);
-}
-
-
-/* Accessibility */
-@media (prefers-reduced-motion: reduce) {
-
-    *,
-    *::before,
-    *::after {
-        animation: none !important;
-        transition: none !important;
+/* Blue blob movement */
+@keyframes blueGlow {
+    0% {
+        transform: translate(0, 0) scale(1);
     }
 
+    50% {
+        transform: translate(250px, 200px) scale(1.3);
+    }
+
+    100% {
+        transform: translate(500px, 350px) scale(0.8);
+    }
 }
 
+/* Purple blob movement */
+@keyframes purpleGlow {
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+
+    50% {
+        transform: translate(-250px, -150px) scale(1.3);
+    }
+
+    100% {
+        transform: translate(-400px, -300px) scale(0.9);
+    }
+}
