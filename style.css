@@ -240,7 +240,7 @@ tr:nth-child(even) {
    ================================= */
 
 .tip-box {
-    line-height: 1.8;
+    line-height: 2;
 }
    
 .tip-box h3 {
@@ -250,7 +250,7 @@ tr:nth-child(even) {
 
 .tip-box p {
     line-height: 2;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 /* =================================
