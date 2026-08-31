@@ -70,8 +70,6 @@ nav .container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-right: 50px;
-    margin-left: 50px;
 }
 
 nav a {
