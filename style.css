@@ -70,6 +70,8 @@ nav .container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-right: 50px;
+    margin-left: 50px;
 }
 
 nav a {
@@ -138,9 +140,9 @@ section {
 
     object-fit: cover;
 
-    border-radius: 50%;
+    border-radius: 45%;
 
-    border: 5px solid #2563eb;
+    border: 0px solid #2563eb;
 }
 
 .button {
