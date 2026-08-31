@@ -235,6 +235,22 @@ th {
 tr:nth-child(even) {
     background-color: #f3f4f6;
 }
+/* =================================
+   PERSONAL MOTTO
+   ================================= */
+
+.tip-box {
+    text-align: center;
+}
+
+.tip-box h3 {
+    margin-bottom: 10px;
+}
+
+.tip-box p {
+    line-height: 1.8;
+    margin: 0;
+}
 
 /* =================================
    PROJECTS
